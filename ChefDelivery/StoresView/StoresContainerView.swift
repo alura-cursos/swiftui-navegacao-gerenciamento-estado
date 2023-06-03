@@ -42,11 +42,21 @@ struct StoresContainerView: View {
             }
             
             VStack(alignment: .leading, spacing: 30) {
-                ForEach(filteredStores) { mock in
-                    NavigationLink {
-                        StoreDetailView(store: mock)
-                    } label: {
-                        StoreItemView(store: mock)
+                
+                if filteredStores.isEmpty {
+                    Text("Nenhum resultado encontrado,")
+                        .font(.title3)
+                        .bold()
+                        .foregroundColor(Color("ColorRed"))
+                        .padding(.vertical, 32)
+                        .frame(maxWidth: .infinity)
+                } else {
+                    ForEach(filteredStores) { mock in
+                        NavigationLink {
+                            StoreDetailView(store: mock)
+                        } label: {
+                            StoreItemView(store: mock)
+                        }
                     }
                 }
             }
