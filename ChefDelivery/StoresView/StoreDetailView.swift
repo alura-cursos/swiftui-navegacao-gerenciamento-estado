@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StoreDetailView: View {
     
-    let store: OrderType
+    let store: StoreType
     
     var body: some View {
         Text(store.name)
@@ -18,6 +18,6 @@ struct StoreDetailView: View {
 
 struct StoreDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        StoreDetailView(store: ordersMock[0])
+        StoreDetailView(store: storesMock[0])
     }
 }
