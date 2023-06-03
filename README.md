@@ -1,0 +1,1 @@
+# swiftui-navegacao-gerenciamento-estadonciamento-
