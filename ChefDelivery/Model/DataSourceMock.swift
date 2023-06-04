@@ -54,7 +54,7 @@ let storesMock: [StoreType] = [
         logoImage: "carbron-logo",
         headerImage: "carbron-header",
         location: "Rua Terceira, 789, São Paulo, SP",
-        stars: 5,
+        stars: 4,
         products: [
             ProductType(id: 11, name: "Picanha", description: "Picanha grelhada servida com arroz, farofa e vinagrete", image: "picanha", price: 29.99),
             ProductType(id: 12, name: "Costela no bafo", description: "Deliciosa costela assada lentamente, servida com batatas", image: "ribs", price: 26.99),
