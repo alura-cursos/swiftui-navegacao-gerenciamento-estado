@@ -21,6 +21,7 @@ let storesMock: [StoreType] = [
     StoreType(
         id: 1,
         name: "Monstro Burger",
+        distance: 3.4,
         logoImage: "monstro-burger-logo",
         headerImage: "monstro-burger-header",
         location: "Rua Principal, 123, São Paulo, SP",
@@ -36,6 +37,7 @@ let storesMock: [StoreType] = [
     StoreType(
         id: 2,
         name: "Food Court",
+        distance: 5.4,
         logoImage: "food-court-logo",
         headerImage: "food-court-header",
         location: "Avenida Secundária, 456, São Paulo, SP",
@@ -51,6 +53,7 @@ let storesMock: [StoreType] = [
     StoreType(
         id: 3,
         name: "Carbron",
+        distance: 2.3,
         logoImage: "carbron-logo",
         headerImage: "carbron-header",
         location: "Rua Terceira, 789, São Paulo, SP",
@@ -66,6 +69,7 @@ let storesMock: [StoreType] = [
     StoreType(
         id: 4,
         name: "Padaria",
+        distance: 6.7,
         logoImage: "bakery-logo",
         headerImage: "bakery-header",
         location: "Rua Quarta, 159, São Paulo, SP",
@@ -81,6 +85,7 @@ let storesMock: [StoreType] = [
     StoreType(
         id: 5,
         name: "Açaí Panda",
+        distance: 10.2,
         logoImage: "acai-panda-logo",
         headerImage: "acai-panda-header",
         location: "Avenida Quinta, 753, São Paulo, SP",
