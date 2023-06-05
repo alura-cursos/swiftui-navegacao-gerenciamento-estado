@@ -83,7 +83,8 @@ struct StoresContainerView: View {
                 } else {
                     ForEach(filteredStores) { mock in
                         NavigationLink {
-                            StoreDetailView(store: mock)
+                            StoreDetailView()
+                                .environmentObject(mock)
                         } label: {
                             StoreItemView(store: mock)
                         }
@@ -101,5 +102,6 @@ struct StoresContainerView_Previews: PreviewProvider {
     static var previews: some View {
         StoresContainerView()
             .previewLayout(.sizeThatFits)
+            .environmentObject(storesMock[0])
     }
 }
